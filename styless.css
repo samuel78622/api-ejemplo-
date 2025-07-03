@@ -1,0 +1,74 @@
+/* ====================
+   ESTILOS GENERALES
+==================== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+
+/* ====================
+   BOTÓN PRINCIPAL
+==================== */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* ====================
+   TABLA DE DIVISAS
+==================== */
+#emails table {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#emails th, #emails td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+#emails th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+#emails tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#emails tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ====================
+   TEXTO SIN DATOS
+==================== */
+#emails:empty::before {
+  content: "Haz clic en el botón para cargar las divisas";
+  display: block;
+  font-style: italic;
+  color: #777;
+  margin-top: 20px;
+}
